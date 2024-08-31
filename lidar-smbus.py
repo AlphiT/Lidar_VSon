@@ -30,7 +30,7 @@ def process_lidar_data_sync():
                 angle = d[1]
                 distance = d[2]
 
-                if 290 <= angle <= 360 and 0 <= angle <= 70:
+                if 270 <= angle <= 360 and 0 <= angle <= 90:
                     if (distance / 10) <= 200:
                         temp_scan_data.append({'angle': angle, 'distance': distance / 10})
 
