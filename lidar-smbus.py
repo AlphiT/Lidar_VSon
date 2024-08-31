@@ -47,7 +47,7 @@ def process_lidar_data_sync():
                 distance = d[2]
 
                 if 350 <= angle <= 360 and 0 <= angle <= 10:
-                    if (distance / 10) <= 90:
+                    if (distance / 10) <= 100:
                         one_sent = True
                         print(1)
                         send_data_to_arduino(1)
